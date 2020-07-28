@@ -43,7 +43,6 @@
      
 <!--        All Java Script files  -->
     <script src="../../js/getheader().js" type="text/javascript"></script>
-    <script src="../../js/getfooter.js" type="text/javascript"></script>
     
 </body>
 </html>

@@ -19,12 +19,12 @@ function activeNavItem() {
     if (document.URL.includes("index")) {
         document.getElementById("forside").className += " active";}
     
-    else if (document.URL.includes("opgaver")||document.URL.includes("fuldbeskrivelse")) {
-        document.getElementById("opgaver").className += " active";}
+    else if (document.URL.includes("Data")) {
+        document.getElementById("data").className += " active";}
     
-    else if (document.URL.includes("kontakt")) {
-        document.getElementById("kontakt").className += " active";}   
-    }, 150);
+    else if (document.URL.includes("Graf")) {
+        document.getElementById("graf").className += " active";}   
+    }, 50);
 }
 
 function urlCheck(){
