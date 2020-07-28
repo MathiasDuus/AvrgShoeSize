@@ -12,13 +12,10 @@
     </head>
      <body onload="getheader();">        
         <header id="header">
-        </header>
-<div class="container">
-    <div class="row">       
+        </header>     
           <?php  
           
     include 'bin/getdata.php';
-    
          ?>
         
 
