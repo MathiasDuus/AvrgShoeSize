@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand navbar-dark bg-lightblack">
+<nav class="navbar navbar-expand navbar-dark bg-purple">
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
         <a id="forside" class="col-sm nav-item nav-link" href="index.php">Registrering <span class="sr-only">(current)</span></a>

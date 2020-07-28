@@ -7,21 +7,23 @@ body {
    background-color: whitesmoke !important;
 }
 
-.bg-darkgray{
-    background-color: rgb(20,20,20);
-}
-
-.bg-lightblack{
-    background-color: rgb(25,25,25);
+.bg-purple{
+    background-color: #9c45ff;
 }
 
 #reg{
     margin-top: 20px;
 }
 
-#buttonreg{
+.btn#buttonreg{
     float: right;
+    background-color: #9c45ff;
+    color: white;
 }
+
+/*.btn :hover{
+     background-color: #851cfc;
+}*/
 
 #front.row{
     margin:0; 

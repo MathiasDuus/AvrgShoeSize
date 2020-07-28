@@ -17,17 +17,17 @@
     <div id="reg" class="container">
         <div class="row">
             <div class="col-sm">
-                <form  method="POST "action="bin/senddata.php">
+                <form action="bin/senddata.php" method="post">
                     <div class="form-group">
 
                       <label for="Navn">Navn</label>
-                      <input type="text" class="form-control" id="Navn" required>
+                      <input type="text" class="form-control" id="Navn" name="Navn" required>
 
                     </div>
                     <div class="form-group">
 
                       <label for="Email">Email address</label>
-                      <input type="email" class="form-control" id="Email" required>
+                      <input type="email" class="form-control" id="Email" name="Email" required>
                     </div>  
 
                     <div class="form-group">
@@ -35,19 +35,19 @@
                         <div class="col">
 
                             <label for="Alder">Alder</label>
-                            <input type="number" min="0" class="form-control" id="Alder" required>
+                            <input type="number" min="0" class="form-control" id="Alder" name="Alder" required>
 
                         </div>
                         <div class="col">
 
                           <label for="Sko">Skostørelse</label>
-                          <input type="number" min="0" class="form-control" id="Sko" required>
+                          <input type="number" min="0" class="form-control" id="Sko" name="Sko" required>
 
                         </div>
                       </div>
                     </div>
 
-                    <button type="submit" id="buttonreg" name="buttonreg" value="buttonreg" class="btn btn-primary">Send</button>
+                    <button type="submit" id="buttonreg" name="buttonreg" class="btn ">Send</button>
                 </form>
             </div>
         </div>
