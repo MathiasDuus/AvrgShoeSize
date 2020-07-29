@@ -21,9 +21,9 @@ body {
     color: white;
 }
 
-/*.btn :hover{
-     background-color: #851cfc;
-}*/
+.col-sm-4#datacard{
+    padding-bottom: 5px;
+}
 
 #front.row{
     margin:0; 
@@ -34,4 +34,7 @@ body {
     margin-left: 12.5%;
 }
 
+.chart.container{
+   padding: 20px;    
+}
 

@@ -10,7 +10,6 @@ function getheader() {
         
     xmlhttp.open("GET", "../php/bin/header.php", true);
     xmlhttp.send();
-    urlCheck();
     activeNavItem();
 }
 
@@ -19,17 +18,12 @@ function activeNavItem() {
     if (document.URL.includes("index")) {
         document.getElementById("forside").className += " active";}
     
-    else if (document.URL.includes("Data")) {
+    if (document.URL.includes("Data")) {
         document.getElementById("data").className += " active";}
     
-    else if (document.URL.includes("Graf")) {
-        document.getElementById("graf").className += " active";}   
+    if (document.URL.includes("Graf")) {
+        document.getElementById("graf").className += " active";}
     }, 50);
 }
 
-function urlCheck(){
-    if (document.URL.includes("send=true")) {
-        alert("Tak for din mail :)");}
-    else if (document.URL.includes("send=false")) {
-        alert("Hov der gik noget galt");}
-}
+

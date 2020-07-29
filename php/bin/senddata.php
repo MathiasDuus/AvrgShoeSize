@@ -18,7 +18,8 @@ $skostr = $_POST['Sko'];
 
 
 $sql = "INSERT INTO hyppighed(`Navn`, `Email`, `Alder`, `Skostr`) "
-                   . "VALUES ("."'$navn', "."'$email', "."'$alder', "."'$skostr')";
+        . "VALUES ('$navn', '$email', '$alder', '$skostr')";
+
 
 if (mysqli_query($conn, $sql)) {
   mysqli_close($conn);

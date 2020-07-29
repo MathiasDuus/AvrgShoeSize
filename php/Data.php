@@ -15,24 +15,39 @@
  <body onload="getheader();">
     <header id="header">
     </header>
-    
+         
     <div id="reg" class="container">
         <div class="row">
-            <div class="col-sm">
-                <!-- lav for loop-->
+           
+                
+                
+        <?php  
+            include 'bin/getdata.php';
+            $numRow=numRow();
+
+            $ID = 1;    
+
+            for($ID;$ID<=$numRow;$ID++){
+            list($navn, $alder, $skostr) = checkProject($ID);
+
+        ?>
+        <div class="col-sm-4" id="datacard">
                 <div class="card" style="width: 18rem;">
                   <div class="card-header">
-                <!--    Navn-->
+                <?php echo $navn;?>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><!-- Skostørelse --></li>
-                    <li class="list-group-item"><!-- Alder --></li>
+                      <li class="list-group-item"><strong>Skostørelse: </strong><?php echo $skostr;?></li>
+                      <li class="list-group-item"><strong>Alder: </strong><?php echo $alder;?></li>
                   </ul>
                 </div>
             </div> 
+                
+             <?php
+    }
+     ?> 
         </div>
     </div>
-     
      
 <!--        All Java Script files  -->
     <script src="../js/getheader().js" type="text/javascript"></script>
